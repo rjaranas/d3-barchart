@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    color:white;
+    font-family: 'Prompt', sans-serif;
+}
+
+.bar:hover {
+    fill:azure;
+}
+
+
+#tooltip {
+    color: white;
+    position: absolute;
+    border-radius: 5px;
+    padding: 3px;
+    right: 1500px;
+    top: 400px;
+    font-size: 2em;
+    background-color: black;
+    margin: auto;
+    padding: 25px;
+
+}
+
+button {
+    width: 100%
+}
