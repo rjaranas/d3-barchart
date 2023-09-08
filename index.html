@@ -137,17 +137,21 @@
 
                     tooltip.transition()
                     .duration(200)
-                    .style('opacity', '1')
-                    tooltip.html(`${qDate}<br>$${gdpV} Billion<br>
-                    <button type='button' id='button' class='btn btn-light'>Hide</button>`)
+                    .style('opacity', '2')
+                    tooltip.html(`${qDate}<br>$${gdpV} Billion<br>`)
+                    // <button type='button' id='button' class='btn btn-light'>Hide</button>`
                     tooltip.attr('data-date', d[0])
 
-                    tooltip.select('#button')
-                    .on('click', function () {
-                        hideDisplay()
-                    })
+                    // tooltip.select('#button')
+                    // .on('click', function () {
+                    //     hideDisplay()
+                    // })
                   
                 })
+                .on('mousemove', function() {
+                tooltip.style('top', (event.pageY-100)+'px')
+                .style('left',(event.pageX)+'px')
+            })
 
                 .on('mouseout', function(event, d) {
                     tooltip.transition()
@@ -157,11 +161,11 @@
 
 
                      
-                function hideDisplay() {
-                        const elem = document.getElementById('tooltip')
-                        elem.style.opacity = 0;
-                        // alert('You clicked it!')
-                    }
+                // function hideDisplay() {
+                //         const elem = document.getElementById('tooltip')
+                //         elem.style.opacity = 0;
+                //         // alert('You clicked it!')
+                //     }
 
                 svg.append('g')
                 .attr('id', 'x-axis')

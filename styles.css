@@ -15,9 +15,8 @@ html, body {
     position: absolute;
     border-radius: 5px;
     padding: 3px;
-    right: 1500px;
-    top: 400px;
-    font-size: 2em;
+
+    font-size: 1em;
     background-color: black;
     margin: auto;
     padding: 25px;
