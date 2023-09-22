@@ -3,6 +3,7 @@ html, body {
     width: 100%;
     color:white;
     font-family: 'Prompt', sans-serif;
+    font-size: 20px;
 }
 
 .bar:hover {
@@ -11,18 +12,23 @@ html, body {
 
 
 #tooltip {
-    color: white;
     position: absolute;
     border-radius: 5px;
-    padding: 3px;
-
+    padding: 1px;
     font-size: 1em;
-    background-color: black;
+    background-color: white;
     margin: auto;
     padding: 25px;
+    color: black;
+    text-align: center;
+
 
 }
 
 button {
     width: 100%
+}
+
+a {
+    color: white;
 }
